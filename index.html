@@ -4,16 +4,22 @@
 	<title>Bata Shop</title>
 	<link rel="stylesheet" type="text/css" href="assets/bower_components/semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="assets/bower_components/slick-carousel/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="assets/bower_components/slick-carousel/slick/slick-theme.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="assets/bower_components/slick-carousel/slick/slick-theme.css"/> -->
 
 
 	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="assets/bower_components/semantic/dist/semantic.min.js"></script>
 	<script src="assets/extra/ResponsiveSlides/responsiveslides.min.js"></script>
-  <script src="assets/carousel.js"></script> 
+  <!-- <script src="assets/carousel.js"></script> -->
 
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="assets/bower_components/slick-carousel/slick/slick.min.js"></script>
+  <!-- <script type="text/javascript" src="assets/bower_components/slick-carousel/slick/slick.min.js"></script> -->
+
+  <link rel="stylesheet" href="assets/extra/owl.carousel/owl-carousel/owl.carousel.css">
+ 
+  <!-- Default Theme -->
+  <link rel="stylesheet" href="assets/extra/owl.carousel/owl-carousel/owl.theme.css">
+  <script src="assets/extra/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
 
 	<style>
 		.ui.segment{
@@ -28,10 +34,11 @@
         margin-left:1%;
         margin-right:1%;
     }
-    .slick-slide
-{
-width: 200px;
-}
+
+  .slick-slide
+  {
+    width: 200px;
+  }
     .card{
       margin-left:5%;
     }
@@ -119,13 +126,13 @@ width: 200px;
 </head>
 <body style="background:#AF4343;">
 	<div class="ui center aligned segment">
-    <div class="ui menu">
+    <div class="ui borderless menu">
         <img src="img/logo_kilimall.png">
       <a class="item">
         <div class="item">
               <div class="ui icon input">
-                <input type="text" placeholder="Search...">
-                <i class="search link icon"></i>
+                <input type="text" placeholder="I'm Looking for...">
+                <button class="ui orange button">Search</button>
               </div>
             </div>
       </a>
@@ -160,9 +167,29 @@ width: 200px;
   </ul>
 
       <div class="ui segment" id="segment_container">
-        <img width="1100" src="img/bootsketchers.jpg" />
-        <img width="1100" src="img/bootsketchers.jpg" />
-     
+
+        <div class="brand_images">
+            <img width="1100" src="img/bootsketchers.jpg" usemap="#brands1" />
+            <map name="ewg">
+              <area shape="rect" coords="6,8,358,353" href="" target="_blank" clstag="jshopmall|keycount|32925753|1"></area>
+              <area shape="rect" coords="364,8,726,186" href="http://skechers.jd.com/view_search-194900-60254-56083-3483594-1-0-0-1-1-24.html" target="_blank" clstag="jshopmall|keycount|32925753|2"></area>
+              <area shape="rect" coords="364,192,726,354" href="http://skechers.jd.com/view_search-194900-60254-56083-3483600-1-0-0-1-1-24.html" target="_blank" clstag="jshopmall|keycount|32925753|3"></area>
+              <area shape="rect" coords="734,7,1096,179" href="http://skechers.jd.com/view_search-194900-60254-56083-3483593-1-0-0-1-1-24.html?isGlobalSearch=0&amp;other=" target="_blank" clstag="jshopmall|keycount|32925753|4"></area>
+              <area shape="rect" coords="733,183,1094,352" href="http://skechers.jd.com/view_search-194900-60254-56083-3483672-1-0-0-1-1-24.html" target="_blank" clstag="jshopmall|keycount|32925753|5"></area>
+            </map>
+
+        </div>
+        <div class="brand_images">
+             <img width="1100" src="img/bootsketchers.jpg" usemap="#brands2"/>
+             <map name="brands2">
+              <area shape="rect" coords="6,8,358,353" href="" target="_blank" clstag="jshopmall|keycount|32925753|1"></area>
+              <area shape="rect" coords="364,8,726,186" href="http://skechers.jd.com/view_search-194900-60254-56083-3483594-1-0-0-1-1-24.html" target="_blank" clstag="jshopmall|keycount|32925753|2"></area>
+              <area shape="rect" coords="364,192,726,354" href="http://skechers.jd.com/view_search-194900-60254-56083-3483600-1-0-0-1-1-24.html" target="_blank" clstag="jshopmall|keycount|32925753|3"></area>
+              <area shape="rect" coords="734,7,1096,179" href="http://skechers.jd.com/view_search-194900-60254-56083-3483593-1-0-0-1-1-24.html?isGlobalSearch=0&amp;other=" target="_blank" clstag="jshopmall|keycount|32925753|4"></area>
+              <area shape="rect" coords="733,183,1094,352" href="http://skechers.jd.com/view_search-194900-60254-56083-3483672-1-0-0-1-1-24.html" target="_blank" clstag="jshopmall|keycount|32925753|5"></area>
+            </map>
+        </div>
+        
           <img src="img/hot_tops.png" alt=""/>
           <div class="ui two column grid">
             <div class="column"><img src="img/people.jpg" alt=""/></div>
@@ -187,11 +214,13 @@ width: 200px;
                 </div>
             </div>
           </div>
+          <img src="img/hot_tops.png" alt=""/>
           <img  src="img/person_shoes2.png" /><br /><br />
+          <img src="img/hot_tops.png" alt=""/>
           <img  src="img/person_shoes.png" />
 
           <h2 class="ui centered header">Limited Offer!!</h2>
-          <div class="your-class">
+          <div id="owl-example" class="owl-carousel">
             <div>
                 <div class="card">
                     <div class="image">
@@ -218,7 +247,7 @@ width: 200px;
                 </div>
             </div>
             <div>
-              <div class="card">
+                <div class="card">
                     <div class="image">
                       <img src="img/batas2.jpg">
                     </div>
@@ -243,7 +272,7 @@ width: 200px;
                 </div>
             </div>
             <div>
-              <div class="card">
+                <div class="card">
                     <div class="image">
                       <img src="img/batas3.jpg">
                     </div>
@@ -268,7 +297,7 @@ width: 200px;
                 </div>
             </div>
             <div>
-              <div class="card">
+                <div class="card">
                     <div class="image">
                       <img src="img/batas4.jpg">
                     </div>
@@ -293,7 +322,7 @@ width: 200px;
                 </div>
             </div>
             <div>
-              <div class="card">
+                <div class="card">
                     <div class="image">
                       <img src="img/batas5.jpg">
                     </div>
@@ -318,7 +347,7 @@ width: 200px;
                 </div>
             </div>
             <div>
-              <div class="card">
+                <div class="card">
                     <div class="image">
                       <img src="img/batas6.jpg">
                     </div>
@@ -343,7 +372,7 @@ width: 200px;
                 </div>
             </div>
             <div>
-              <div class="card">
+                <div class="card">
                     <div class="image">
                       <img src="img/batas7.jpg">
                     </div>
@@ -367,449 +396,21 @@ width: 200px;
                     </div> -->
                 </div>
             </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/batas8.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/batas9.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
           </div>
-          <h2 class="ui centered header">Top Selling Women Shoes</h2>
-          <div class="your-class">
-            <div>
-                <div class="card">
-                    <div class="image">
-                      <img src="img/bataw1.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/bataw2.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/bataw4.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/bataw5.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/bataw6.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-          </div> <!-- Women Sales -->
-
-          <h2 class="ui centered header">Top Selling Men Shoes</h2>
-          <div class="your-class">
-            <div>
-                <div class="card">
-                    <div class="image">
-                      <img src="img/batam1.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/batam2.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/batam3.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/batam4.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/batam5.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-          </div> <!-- Men Sales -->
-
-          <h2 class="ui centered header">Top Selling Kids Shoes</h2>
-          <div class="your-class">
-            <div>
-                <div class="card">
-                    <div class="image">
-                      <img src="img/batak1.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/batak2.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/batak3.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/batak4.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/batak5.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    <!-- <div class="extra content">
-                      <span class="right floated">
-                        Joined in 2013
-                      </span>
-                      <span>
-                        <i class="user icon"></i>
-                        75 Friends
-                      </span>
-                    </div> -->
-                </div>
-            </div>
-          </div> <!-- Kids Sales -->
-
+          
       </div> <!-- end segment -->
       <script>
     		$(function() {
     		    $(".rslides").responsiveSlides();
     		  });
+
+        $(document).ready(function() {
+ 
+        $("#owl-example").owlCarousel({
+          items:4
+        });
+       
+      });
 	    </script>
 
 </body>
