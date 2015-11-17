@@ -42,7 +42,7 @@
          border: 0px; 
          box-shadow: 0 0px 0px 0;
          border-radius: 0px;
-         margin-left: 8%;
+         margin-left: 7.5%;
      }
 
      .rslides {
@@ -201,44 +201,120 @@ a{
             padding-bottom: 30px;
         text-align: center;
 }
+#header-2013 {
+    height: 60px;
+    padding: 15px 0;
+    width: 1200px;
+}
+#logo-2013 {
+    float: left;
+    width: 330px;
+}
+.ld {
+    position: relative;
+    zoom: 1;
+}
+#search-2013 .i-search {
+    z-index: 11;
+    width: 304px;
+    height: 30px;
+}
+#search-2013 {
+    float: left;
+    padding: 15px 0 0 0;
+}
+.head-search-bar .search-form {
+    background-color: #FFF;
+    height: 42px;
+    padding: 1px;
+    border: 1px solid #ABA9A9;
+}
+
+#my360buy-2013 {
+    float: right;
+    position: relative;
+    z-index: 9;
+    width: auto;
+    height: 30px;
+    margin-top: 12px;
+}
+#hotwords {
+    height: 18px;
+    color: #999;
+    overflow: hidden;
+}
+.head-search-bar .input-text {
+    line-height: 24px;
+    color: #555;
+    width: 78%;
+    height: 32px;
+    float: left;
+    padding: 3px;
+    border: none 0;
+    background-color: #fff;
+}
+.head-search-bar .input-submit {
+    font-size: 15px;
+    color: #FFF;
+    font-weight: 600;
+    background-color: #FA8708;
+    width: 20%;
+    height: 38px;
+    float: right;
+    border: none;
+    cursor: pointer;
+}
+input:focus{
+    outline: 0;
+}
 
 </style>
 </head>
 <body>
-	<div class="ui center aligned segment">
-        <div class="ui borderless menu">
-          <img src="img/logo_kilimall.png">
-          <a class="item">
-            <div class="item">
-              <div class="ui icon input">
-                <input type="text" placeholder="I'm Looking for...">
-                <button class="ui orange button">Search</button>
+	<div class="ui segment">
+        <div class="w" id="header-2013">
+                <div id="logo-2013" class="ld"><a href="http://kilimall.co.ke" hidefocus="true"><b></b><img src="img/logo_kilimall.png" alt="Jingdong"></a>
+                </div>
+                <!--logo end-->
+                <div id="search-2013">
+                    <div class="i-search ld">
+                        <div class="head-search-bar">
+                            <form action="http://www.kilimall.co.ke" method="get" class="search-form">
+                                <input name="act" id="search_act" value="search" type="hidden">
+                                <input type="hidden" name="rel" value="1">
+                                <input name="keyword" id="keyword" type="text" class="input-text ui-autocomplete-input" value="" maxlength="60" x-webkit-speech="" lang="zh-CN" onwebkitspeechchange="foo()" placeholder="I'm looking for ..." x-webkit-grammar="builtin:search" autocomplete="off">
+                                <input type="submit" id="button" value="Search" class="input-submit">
+                            </form>
+
+                        </div>
+                    </div>
+                    <div id="hotwords"></div>
+                </div>
+                <!--search end-->
+                <div id="my360buy-2013">
+                    <img src="img/intro.png">
+                </div>
+                <!--my360buy end-->
             </div>
-        </div>
-    </a>
-    <a class="item"><img class="ui small image" src="img/delivery.png" /></a>
-    <a class="item"><img class="ui small image" src="img/7days.png" /></a>
-    <a class="item"><img class="ui small image" src="img/pay_on.png" /></a>
-</div>
-<div class="ui borderless menu">
-  <div class="item">
-    <img class="ui small image" src="img/bata_logo.png">
-</div>
-<a class="item" onclick="women()"><h4 class="ui header">Women</h4></a>
-<a class="item"><h4 class="ui header">Men</h4></a>
-<a class="item"><h4 class="ui header">Kids</h4></a>
-</div>
-</div>
-</div>
+            <!--header end--><br /><br />
+            
+
+    </div>
+    <div class="ui borderless menu">
+                <div class="item">
+                    <img class="ui small image" src="img/bata_logo.png">
+                </div>
+                <a class="item" onclick="women()"><h4 class="ui header">Women</h4></a>
+                <a class="item"><h4 class="ui header">Men</h4></a>
+                <a class="item"><h4 class="ui header">Kids</h4></a>
+            </div>
 
 <ul class="rslides">
   <li>
     <img src="img/gallery1.jpg" alt="">
-    <!-- <p class="caption">Beef Stew & Chapati</p> -->
 </li>
 <li>
     <img src="img/gallery2.jpg" alt="">
-    <!-- <p class="caption">Pilau & Vegetable Rice</p> -->
 </li>
     <!-- <li>
       <img class="ui massive image" src="img/Toughees-bis.jpg" alt="">
