@@ -1,273 +1,264 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Bata Shop</title>
+	<title>Bata Shop @ Kilimall | Kenya's No.1 Online Shopping for Electronics, Fashion, Home&amp; Living and more Enjoy Payment on Delivery and Free Shipping for Products</title>
 	<link rel="stylesheet" type="text/css" href="assets/bower_components/semantic/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="assets/bower_components/slick-carousel/slick/slick.css"/>
     <link rel="stylesheet" href="assets/extra/owl.carousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="assets/extra/owl.carousel/owl-carousel/owl.theme.css">
+    <link rel="icon" href="http://www.kilimall.co.ke/favicon.ico" mce_href="http://www.kilimall.co.ke/favicon.ico" type="image/x-icon">
 
-  <style>
-    .ui.segment{
-		    box-shadow: 0px 0px 0px 0 rgba(34, 36, 38, 0.15);
-		    margin: 0rem 0em;
-		    padding: 1em 1em;
-		    border-radius: 0.28571429rem;
-		    border: 0px;
-            /*background: #827F7F;*/
-        }
+    <meta content="text/html" charset="utf-8" http-equiv="content-type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        .slick-slide
-        {
-            width: 200px;
-        }
-        .card{
-            margin-left:5%;
-        }
+    <style>
+        .ui.segment{
+    		    box-shadow: 0px 0px 0px 0 rgba(34, 36, 38, 0.15);
+    		    margin: 0rem 0em;
+    		    padding: 1em 1em;
+    		    border-radius: 0.28571429rem;
+    		    border: 0px;
+                /*background: #827F7F;*/
+            }
 
-        .slick-prev:before {
-            content: "<";
-            color: black !important;
-            font-weight: bold;
-        }
-        .slick-next:before {
-            content: ">";
-            color: black !important;
-            font-weight: bold;
-        }
+            .slick-slide
+            {
+                width: 200px;
+            }
+            .card{
+                margin-left:5%;
+            }
 
-        .ui.menu{
-         margin: 0rem 0; 
+            .slick-prev:before {
+                content: "<";
+                color: black !important;
+                font-weight: bold;
+            }
+            .slick-next:before {
+                content: ">";
+                color: black !important;
+                font-weight: bold;
+            }
 
-         border: 0px; 
-         box-shadow: 0 0px 0px 0;
-         border-radius: 0px;
-         margin-left: 7.5%;
-     }
+            .ui.menu{
+             margin: 0rem 0; 
 
-     .rslides {
-      position: relative;
-      list-style: none;
-      overflow: hidden;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      /*margin-left: 4%;*/
-  }
+             border: 0px; 
+             box-shadow: 0 0px 0px 0;
+             border-radius: 0px;
+             margin-left: 7.5%;
+         }
 
-  #mobileslides{
-      margin-left: 0px;
-  }
-  #capmobile{
-      max-width:607px;
-  }
-  #tabletslides{
-      margin-left: 30px;
-  }
+         .rslides {
+          position: relative;
+          list-style: none;
+          overflow: hidden;
+          width: 100%;
+          padding: 0;
+          margin: 0;
+          /*margin-left: 4%;*/
+      }
 
-  .rslides li {
-      -webkit-backface-visibility: hidden;
+      #mobileslides{
+          margin-left: 0px;
+      }
+      #capmobile{
+          max-width:607px;
+      }
+      #tabletslides{
+          margin-left: 30px;
+      }
+
+      .rslides li {
+          -webkit-backface-visibility: hidden;
+          position: absolute;
+          display: none;
+          width: 100%;
+          left: 0;
+          top: 0;
+      }
+
+      .rslides li:first-child {
+          position: relative;
+          display: block;
+          float: left;
+      }
+
+      .rslides img {
+          display: block;
+          height: auto;
+          float: left;
+          width: 100%;
+          border: 0;
+      }
+
+    #segment_container{
+    	margin-left:8%;
+      margin-right:8%;
+    }
+    .cc-grid[data-columns]::before {
+      content: '2 .column.size-1of2';
+    }
+    .cc-grid.of3[data-columns]::before {
+      content: '3 .column.size-1of3';
+    }
+    .cc-grid.of1[data-columns]::before {
+      content: '1 .column.size-1of1';
+    }
+
+    /* These are the classes that are going to be applied: */
+    .column { float: left; }
+    .size-1of2 { width: 50%; }
+    .size-1of3 {width: 33%;}
+    .size-1of1 {width: 33%;}
+    .owl-theme .owl-controls .owl-buttons div {
       position: absolute;
-      display: none;
-      width: 100%;
-      left: 0;
-      top: 0;
-  }
+    }
 
-  .rslides li:first-child {
-      position: relative;
-      display: block;
-      float: left;
-  }
+    .owl-theme .owl-controls .owl-buttons .owl-prev{
+      left: -15px;
+      top: 50%; 
+    }
 
-  .rslides img {
-      display: block;
-      height: auto;
-      float: left;
-      width: 100%;
-      border: 0;
-  }
-  /*.caption {
-  position: absolute;
-  display: block;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 15px;
-  text-align: center;
-  background: #1C7D33;
-  background: rgba(0,0,0, .8);
-  color: #fff;
-  width: 960px;
-}*/
-#segment_container{
-	margin-left:8%;
-  margin-right:8%;
-}
-.cc-grid[data-columns]::before {
-  content: '2 .column.size-1of2';
-}
-.cc-grid.of3[data-columns]::before {
-  content: '3 .column.size-1of3';
-}
-.cc-grid.of1[data-columns]::before {
-  content: '1 .column.size-1of1';
-}
+    .owl-theme .owl-controls .owl-buttons .owl-next{
+      right: -15px;
+      top: 50%;
+    }
 
-/* These are the classes that are going to be applied: */
-.column { float: left; }
-.size-1of2 { width: 50%; }
-.size-1of3 {width: 33%;}
-.size-1of1 {width: 33%;}
-.owl-theme .owl-controls .owl-buttons div {
-  position: absolute;
-}
+    #service-2013 {
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        background: #FFF;
+        border-top: 1px solid #DDD;
+        border-bottom: 1px solid #F1F1F1;
+    }
+    #service-2013 dl {
+        float: left;
+        width: 196px;
+    }
+    #service-2013 dt {
+        position: relative;
+        padding: 6px 0 6px 44px;
+        font: 14px "microsoft yahei";
+        zoom: 1;
+    }
 
-.owl-theme .owl-controls .owl-buttons .owl-prev{
-  left: -15px;
-  top: 50%; 
-}
+    #service-2013 dl.fore1 b {
+        background-position: 0 -55px;
+    }
+    #service-2013 dt b {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 40px;
+        height: 40px;
+    }
+    #service-2013 dl b {
+        background-image: url(http://misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
+        background-repeat: no-repeat;
+    }
+    .w {
+        width: 1090px;
+        margin: 0 auto;
+    }
+    #service-2013 dl b {
+        background-image: url(http://misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
+        background-repeat: no-repeat;
+    }
+    #service-2013 dl.fore2 b {
+        background-position: -50px -55px;
+    }
+    #service-2013 dl.fore3 b {
+        background-position: 0 -102px;
+    }
+    #service-2013 dl.fore4 b {
+        background-position: -50px -102px;
+    }
+    #service-2013 dl.fore5 b {
+        background-position: 0 -149px;
+    }
+    a{
+        outline: 0;
+        text-decoration: none;    font-family: 'Roboto', sans-serif;color:grey;
+    }
+    .clear, .clr {
+        display: block;
+        overflow: hidden;
+        clear: both;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+    }
+    #footer-2013{
+                padding-bottom: 30px;
+            text-align: center;
+    }
+    #header-2013 {
+        height: 60px;
+        padding: 15px 0;
+        width: 1200px;
+    }
+    #logo-2013 {
+        float: left;
+        width: 330px;
+    }
+    .ld {
+        position: relative;
+        zoom: 1;
+    }
+    #search-2013 .i-search {
+        z-index: 11;
+        width: 304px;
+        height: 30px;
+    }
+    #search-2013 {
+        float: left;
+        padding: 15px 0 0 0;
+    }
+    .head-search-bar .search-form {
+        background-color: #FFF;
+        height: 42px;
+        padding: 1px;
+        border: 1px solid #ABA9A9;
+    }
 
-.owl-theme .owl-controls .owl-buttons .owl-next{
-  right: -15px;
-  top: 50%;
-}
-
-#service-2013 {
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    background: #FFF;
-    border-top: 1px solid #DDD;
-    border-bottom: 1px solid #F1F1F1;
-}
-#service-2013 dl {
-    float: left;
-    width: 196px;
-}
-#service-2013 dt {
-    position: relative;
-    padding: 6px 0 6px 44px;
-    font: 14px "microsoft yahei";
-    zoom: 1;
-}
-
-#service-2013 dl.fore1 b {
-    background-position: 0 -55px;
-}
-#service-2013 dt b {
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 40px;
-    height: 40px;
-}
-#service-2013 dl b {
-    background-image: url(http://misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
-    background-repeat: no-repeat;
-}
-.w {
-    width: 1090px;
-    margin: 0 auto;
-}
-#service-2013 dl b {
-    background-image: url(http://misc.360buyimg.com/lib/skin/2013/i/20130330A_2.png);
-    background-repeat: no-repeat;
-}
-#service-2013 dl.fore2 b {
-    background-position: -50px -55px;
-}
-#service-2013 dl.fore3 b {
-    background-position: 0 -102px;
-}
-#service-2013 dl.fore4 b {
-    background-position: -50px -102px;
-}
-#service-2013 dl.fore5 b {
-    background-position: 0 -149px;
-}
-a{
-    outline: 0;
-    text-decoration: none;    font-family: 'Roboto', sans-serif;color:grey;
-}
-.clear, .clr {
-    display: block;
-    overflow: hidden;
-    clear: both;
-    height: 0;
-    line-height: 0;
-    font-size: 0;
-}
-#footer-2013{
-            padding-bottom: 30px;
-        text-align: center;
-}
-#header-2013 {
-    height: 60px;
-    padding: 15px 0;
-    width: 1200px;
-}
-#logo-2013 {
-    float: left;
-    width: 330px;
-}
-.ld {
-    position: relative;
-    zoom: 1;
-}
-#search-2013 .i-search {
-    z-index: 11;
-    width: 304px;
-    height: 30px;
-}
-#search-2013 {
-    float: left;
-    padding: 15px 0 0 0;
-}
-.head-search-bar .search-form {
-    background-color: #FFF;
-    height: 42px;
-    padding: 1px;
-    border: 1px solid #ABA9A9;
-}
-
-#my360buy-2013 {
-    float: right;
-    position: relative;
-    z-index: 9;
-    width: auto;
-    height: 30px;
-    margin-top: 12px;
-}
-#hotwords {
-    height: 18px;
-    color: #999;
-    overflow: hidden;
-}
-.head-search-bar .input-text {
-    line-height: 24px;
-    color: #555;
-    width: 78%;
-    height: 32px;
-    float: left;
-    padding: 3px;
-    border: none 0;
-    background-color: #fff;
-}
-.head-search-bar .input-submit {
-    font-size: 15px;
-    color: #FFF;
-    font-weight: 600;
-    background-color: #FA8708;
-    width: 20%;
-    height: 38px;
-    float: right;
-    border: none;
-    cursor: pointer;
-}
-input:focus{
-    outline: 0;
-}
-
+    #my360buy-2013 {
+        float: right;
+        position: relative;
+        z-index: 9;
+        width: auto;
+        height: 30px;
+        margin-top: 12px;
+    }
+    #hotwords {
+        height: 18px;
+        color: #999;
+        overflow: hidden;
+    }
+    .head-search-bar .input-text {
+        line-height: 24px;
+        color: #555;
+        width: 78%;
+        height: 32px;
+        float: left;
+        padding: 3px;
+        border: none 0;
+        background-color: #fff;
+    }
+    .head-search-bar .input-submit {
+        font-size: 15px;
+        color: #FFF;
+        font-weight: 600;
+        background-color: #FA8708;
+        width: 20%;
+        height: 38px;
+        float: right;
+        border: none;
+        cursor: pointer;
+    }
+    input:focus{
+        outline: 0;
+    }
 </style>
 </head>
 <body>
@@ -298,84 +289,85 @@ input:focus{
             </div>
             <!--header end--><br /><br />
             
-
     </div>
     <div class="ui borderless menu">
                 <div class="item">
                     <img class="ui small image" src="img/bata_logo.png">
                 </div>
                 <a class="item" onclick="women()"><h4 class="ui header">Women</h4></a>
-                <a class="item"><h4 class="ui header">Men</h4></a>
-                <a class="item"><h4 class="ui header">Kids</h4></a>
+                <a class="item" onclick="men()"><h4 class="ui header">Men</h4></a>
+                <a class="item" onclick="kids()"><h4 class="ui header">Kids</h4></a>
             </div>
 
 <ul class="rslides">
   <li>
-    <img src="img/gallery1.jpg" alt="">
+    <img src="img/marie-claire.jpg" alt="">
 </li>
 <li>
-    <img src="img/gallery2.jpg" alt="">
+    <img src="img/weinbrenner-slide.jpg" alt="">
 </li>
-    <!-- <li>
-      <img class="ui massive image" src="img/Toughees-bis.jpg" alt="">
-      <p class="caption">This is the third picture</p> 
-  </li> -->
+    <li>
+      <img src="img/Power-slide.jpg" alt="">
+  </li>
 </ul>
 
 <div class="ui segment" id="segment_container">
     <div class="row cw-grid-layout" >
         <div class="large-12 medium-12 small-12 layout-container cc-grid of1" row-number="9" data-columns>
             <a href="http://ok.jd.com/m/9150815gpnlnyvxgkld0/promotion-56083.htm" class="item">
-                <img src="img/cat5.jpg">
+                <img src="img/brand_bata.jpg">
             </a>
             <a href="http://ok.jd.com/m/9150815gpnlnyvxgkld1/promotion-56083.htm" class="item">
-                <img src="img/cat5.jpg">
+                <img src="img/brand_comfit.jpg">
             </a>
         </div>
         <div class="large-12 medium-12 small-12 layout-container cc-grid of1" row-number="9" data-columns>
             <a href="http://ok.jd.com/m/9150815gpnlnyvxgkld3/promotion-56083.htm" class="item">
-                <img src="img/cat3.jpg">
+                <img src="img/brand_marie.jpg">
             </a>
             <a href="http://ok.jd.com/m/9150815gpnlnyvxgkld4/promotion-56083.htm" class="item">
-                <img src="img/cat4.jpg">
+                <img src="img/brand_safari.jpg">
             </a>
 
             <a href="http://ok.jd.com/m/9150815gpnlnyvxgkld3/promotion-56083.htm" class="item">
-                <img src="img/cat1.jpg">
+                <img src="img/brand_wein.jpg">
             </a>
             <a href="http://ok.jd.com/m/9150815gpnlnyvxgkld2/promotion-56083.htm" class="item">
-                <img src="img/cat2.jpg">
+                <img src="img/brand_power.jpg">
             </a>
         </div>
         <div class="large-12 medium-12 small-12 layout-container cc-grid of1" row-number="9" data-columns>
             <a href="http://ok.jd.com/m/9150815gpnlnyvxgkld4/promotion-56083.htm" class="item">
-                <img src="img/cat2.jpg">
+                <img src="img/brand_bubble.jpg">
             </a>
             <a href="http://ok.jd.com/m/9150815gpnlnyvxgkld2/promotion-56083.htm" class="item">
-                <img src="img/cat3.jpg">
+                <img src="img/brand_tommy.jpg">
             </a>
             <a href="http://ok.jd.com/m/9150815gpnlnyvxgkld0/promotion-56083.htm" class="item">
-                <img src="img/cat5.jpg">
+                <img src="img/brand_pata.jpg">
             </a>
         </div>
     </div>
 
-<img src="img/hot_tops.png" alt="" id="scrollto1"/>
+<img src="img/women.jpg" alt="" id="women_brand"/>
 <div class="ui two column grid">
     <div class="column"><img src="img/people.jpg" alt=""/></div>
     <div class="column">
-      <div class="two column row">
-        <div class="ui two item borderless menu">
-          <a class="item"><img class="ui medium image" src="img/sketchers_shoe.png" alt=""/></a>
-          <a class="item"><img class="ui medium image" src="img/sketchers_shoe2.png" alt=""/></a>
-      </div>
-  </div>
-  <div class="two column row">
-    <div class="ui two item borderless menu">
-      <a class="item"><img class="ui medium image" src="img/sk3.png" alt=""/></a>
-      <a class="item"><img class="ui medium image" src="img/sk4.png" alt=""/></a>
-  </div>
-</div>
+        <div class="two column row">
+            <!-- <div class="row"><img class="ui medium image" src="img/sketchers_shoe.png" alt=""/></div>
+            <div class="row"><img class="ui medium image" src="img/sketchers_shoe2.png" alt=""/></div> -->
+            
+            <div class="ui two item borderless menu">
+              <a class="item"><img class="ui medium image" src="img/sketchers_shoe.png" alt=""/></a>
+              <a class="item"><img class="ui medium image" src="img/sketchers_shoe2.png" alt=""/></a>
+            </div>
+        </div>
+        <div class="two column row">
+            <div class="ui two item borderless menu">
+              <a class="item"><img class="ui medium image" src="img/sk3.png" alt=""/></a>
+              <a class="item"><img class="ui medium image" src="img/sk4.png" alt=""/></a>
+            </div>
+        </div>
 <div class="two column row">
     <div class="ui two item borderless menu">
       <a class="item"><img class="ui medium image" src="img/sk5.png" alt=""/></a>
@@ -384,7 +376,7 @@ input:focus{
 </div>
 </div>
 </div>
-<img src="img/hot_tops.png" alt=""/>
+<img src="img/men.jpg" alt="" id="men_brand"/>
 <div class="ui two column grid">
     <div class="column">
       <div class="two column row">
@@ -408,7 +400,7 @@ input:focus{
 </div>
 <div class="column"><img src="img/people.jpg" alt=""/></div>
 </div>
-<img src="img/hot_tops.png" alt=""/>
+<img src="img/kids.jpg" alt="" id="kids_brand"/>
 <div class="ui two column grid">
     <div class="column"><img src="img/people.jpg" alt=""/></div>
     <div class="column">
@@ -1119,13 +1111,24 @@ input:focus{
   <script src="assets/extra/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
   <script>
 
-  function women(){
-    $('#scrollto1').ScrollTo({
-        duration: 1500,
-        easing: 'linear'
-    });
-  }
-
+    function women(){
+        $('#women_brand').ScrollTo({
+            duration: 1500,
+            easing: 'linear'
+        });
+    }
+    function men(){
+        $('#men_brand').ScrollTo({
+            duration: 1300,
+            easing: 'linear'
+        });
+    }
+    function kids(){
+        $('#kids_brand').ScrollTo({
+            duration: 900,
+            easing: 'linear'
+        });
+    }
       $(document).ready(function() {
         $(".rslides").responsiveSlides();
         
