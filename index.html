@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title>Bata Shop @ Kilimall | Kenya's No.1 Online Shopping for Electronics, Fashion, Home&amp; Living and more Enjoy Payment on Delivery and Free Shipping for Products</title>
-	<link rel="stylesheet" type="text/css" href="assets/bower_components/semantic/dist/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/bower_components/slick-carousel/slick/slick.css"/>
+	  <link rel="stylesheet" type="text/css" href="assets/bower_components/semantic/dist/semantic.min.css">
     <link rel="stylesheet" href="assets/extra/owl.carousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="assets/extra/owl.carousel/owl-carousel/owl.theme.css">
+    <!-- <link rel="stylesheet" href="assets/extra/ResponsiveSlides/demo/themes/themes.css"> -->
     <link rel="icon" href="http://www.kilimall.co.ke/favicon.ico" mce_href="http://www.kilimall.co.ke/favicon.ico" type="image/x-icon">
 
     <meta content="text/html" charset="utf-8" http-equiv="content-type">
@@ -18,7 +18,6 @@
     		    padding: 1em 1em;
     		    border-radius: 0.28571429rem;
     		    border: 0px;
-                /*background: #827F7F;*/
             }
 
             .slick-slide
@@ -27,17 +26,6 @@
             }
             .card{
                 margin-left:5%;
-            }
-
-            .slick-prev:before {
-                content: "<";
-                color: black !important;
-                font-weight: bold;
-            }
-            .slick-next:before {
-                content: ">";
-                color: black !important;
-                font-weight: bold;
             }
 
             .ui.menu{
@@ -58,17 +46,6 @@
           margin: 0;
           /*margin-left: 4%;*/
       }
-
-      #mobileslides{
-          margin-left: 0px;
-      }
-      #capmobile{
-          max-width:607px;
-      }
-      #tabletslides{
-          margin-left: 30px;
-      }
-
       .rslides li {
           -webkit-backface-visibility: hidden;
           position: absolute;
@@ -90,8 +67,6 @@
           float: left;
           width: 100%;
           border: 0;
-          /*margin-left:8%;
-          margin-right:8%;*/
       }
 
     #segment_container{
@@ -263,6 +238,21 @@
     input:focus{
         outline: 0;
     }
+    .transparent-btns_tabs{
+    margin-top: 10px;
+    text-align: center;
+}
+#owl-slide .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.owl-prev{
+  display: none;
+  }
+.owl-next{
+  display: none;
+}
 </style>
 </head>
 <body>
@@ -302,24 +292,15 @@
                 <a class="item" onclick="men()"><h4 class="ui header">MEN</h4></a>
                 <a class="item" onclick="kids()"><h4 class="ui header">KIDS</h4></a>
             </div>
+<div id="owl-slide">
+          
+  <div class="item"><img src="img/banner-bata.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="img/banner-weinbrenner.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="img/banner-power.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="img/banner-marie-claire.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="img/banner-toughees.jpg" alt="Owl Image"></div>
 
-<ul class="rslides">
-  <li>
-    <img src="img/banner-bata.jpg" alt="">
-</li>
-<li>
-    <img src="img/banner-weinbrenner.jpg" alt="">
-</li>
-    <li>
-      <img src="img/banner-power.jpg" alt="">
-  </li>
-  <li>
-      <img src="img/banner-marie-claire.jpg" alt="">
-  </li>
-  <li>
-      <img src="img/banner-toughees.jpg" alt="">
-  </li>
-</ul>
+</div>
 
 <div class="ui segment" id="segment_container">
     <div class="row cw-grid-layout" >
@@ -567,15 +548,25 @@
             <div>
                 <div class="card">
                     <div class="image">
-                      <img src="img/bataw1.jpg">
+                      <a href="#"><img width="236" height="295" src="img/clearance_w.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
+                    </div>
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="#"><img width="236" height="295" src="img/clearance_w2.jpg"></a>
+                    </div>
+                    <div class="content">
+                      <div class="header">Leather Lace Shoe Black Up</div>
+                      <div class="meta">
+                        <a>Bata</a>
                       </div>
                     </div>
                     
@@ -584,212 +575,151 @@
             <div>
               <div class="card">
                     <div class="image">
-                      <img src="img/bataw2.jpg">
+                      <a href="#"><img width="236" height="295" src="img/clearance_w3.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    
+                    </div>                 
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <img src="img/bataw4.jpg">
+                      <a href="#"><img width="236" height="295" src="img/clearance_w4.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    
+                    </div>                 
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <img src="img/bataw5.jpg">
+                      <a href="#"><img width="236" height="295" src="img/clearance_w5.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    
+                    </div>                
                 </div>
             </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <img src="img/bataw6.jpg">
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    
-                </div>
-            </div>
-          </div> <!-- Women Sales -->
+          </div> <!-- End Women Sales -->
           <h2 class="ui centered header"> Clearance Men</h2>
           <div class="owl-carousel">
             <div>
                 <div class="card">
                     <div class="image">
-                      <img src="img/batam1.jpg">
+                      <a href="#"><img width="266" height="295" src="img/clearance_m1.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
-                    </div>
-                    
+                    </div>                   
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <img src="img/batam2.jpg">
+                      <a href="#"><img width="266" height="295" src="img/clearance_m2.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
                     </div>
-                    
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <img src="img/batam3.jpg">
+                      <a href="#"><img width="266" height="295" src="img/clearance_m3.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
                     </div>
-                    
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <img src="img/batam4.jpg">
+                      <a href="#"><img width="266" height="295" src="img/clearance_m4.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
                     </div>
-                    
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <img src="img/batam5.jpg">
+                      <a href="#"><img src="img/batam5.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
                     </div>
-                    
                 </div>
             </div>
-          </div> <!-- Men Sales -->
+          </div> <!-- End Men Sales -->
 
           <h2 class="ui centered header"> Clearance Kids</h2>
           <div class="owl-carousel">
             <div>
                 <div class="card">
                     <div class="image">
-                      <img src="img/batak1.jpg">
+                      <a href="#"><img src="img/batak1.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
                     </div>
-                    
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <img src="img/batak2.jpg">
+                      <a href="#"><img src="img/batak2.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
                     </div>
-                    
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <img src="img/batak3.jpg">
+                      <a href="#"><img src="img/batak3.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
                     </div>
-                    
                 </div>
             </div>
             <div>
@@ -802,31 +732,23 @@
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
                     </div>
-                    
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <img src="img/batak5.jpg">
+                      <a href="#"><img src="img/batak5.jpg"></a>
                     </div>
                     <div class="content">
                       <div class="header">Leather Lace Shoe Black Up</div>
                       <div class="meta">
                         <a>Bata</a>
                       </div>
-                      <div class="description">
-                        Kshs.2000
-                      </div>
                     </div>
-                    
                 </div>
             </div>
-          </div> <!-- Kids Sales -->
+          </div> <!-- End Kids Sales -->
 
   </div> <!-- end segment -->
   <div class="w">
@@ -968,7 +890,12 @@
         });
     }
       $(document).ready(function() {
-        $(".rslides").responsiveSlides();
+        $(".rslides").responsiveSlides({
+          auto: true,
+          pager: true,
+          nav: true,
+          namespace: "transparent-btns"
+        });
         
         $(".owl-carousel").owlCarousel({
           items:4,
@@ -977,6 +904,10 @@
           "<i class='chevron left icon'></i>",
           "<i class='chevron right icon'></i>"
           ]
+      });
+        $("#owl-slide").owlCarousel({
+          items:1,
+          autoPlay: 3000
       });
 
     });
