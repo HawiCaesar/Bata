@@ -5,17 +5,14 @@
 	  <link rel="stylesheet" type="text/css" href="assets/bower_components/semantic/dist/semantic.min.css">
     <link rel="stylesheet" href="assets/extra/owl.carousel/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="assets/extra/owl.carousel/owl-carousel/owl.theme.css">
-    <!-- <link rel="stylesheet" href="assets/extra/ResponsiveSlides/demo/themes/themes.css"> -->
     <link rel="icon" href="http://www.kilimall.co.ke/favicon.ico" mce_href="http://www.kilimall.co.ke/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="assets/compiled/flipclock.css">
     <meta content="text/html" charset="utf-8" http-equiv="content-type">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-
   <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="assets/bower_components/semantic/dist/semantic.min.js"></script>
   <script src="assets/extra/ResponsiveSlides/responsiveslides.min.js"></script>
   <script src="assets/carousel.js"></script> 
-
     <style>
         .ui.segment{
     		    box-shadow: 0px 0px 0px 0 rgba(34, 36, 38, 0.15);
@@ -88,7 +85,6 @@
     .cc-grid.of1[data-columns]::before {
       content: '1 .column.size-1of1';
     }
-
     /* These are the classes that are going to be applied: */
     .column { float: left; }
     .size-1of2 { width: 50%; }
@@ -102,12 +98,10 @@
       left: -15px;
       top: 50%; 
     }
-
-    .owl-theme .owl-controls .owl-buttons .owl-next{
+  .owl-theme .owl-controls .owl-buttons .owl-next{
       right: -15px;
       top: 50%;
     }
-
     #service-2013 {
         padding: 10px 20px;
         margin-bottom: 20px;
@@ -125,7 +119,6 @@
         font: 14px "microsoft yahei";
         zoom: 1;
     }
-
     #service-2013 dl.fore1 b {
         background-position: 0 -55px;
     }
@@ -259,10 +252,16 @@
 .owl-next{
   display: none;
 }
+#clockdiv{
+  height: 10%;
+  margin-left: 45%;
+}
 </style>
 </head>
 <body>
 	<div class="ui segment">
+   <!-- clock div -->
+        <div id="clockdiv"></div>
         <div class="w" id="header-2013">
                 <div id="logo-2013" class="ld"><a href="http://kilimall.co.ke" hidefocus="true"><b></b><img src="img/logo_kilimall.png"></a>
                 </div>
@@ -276,7 +275,6 @@
                                 <input name="keyword" id="keyword" type="text" class="input-text ui-autocomplete-input" value="" maxlength="60" x-webkit-speech="" lang="zh-CN" onwebkitspeechchange="foo()" placeholder="I'm looking for ..." x-webkit-grammar="builtin:search" autocomplete="off">
                                 <input type="submit" id="button" value="Search" class="input-submit">
                             </form>
-
                         </div>
                     </div>
                     <div id="hotwords"></div>
@@ -287,168 +285,75 @@
                 </div>
                 <!--my360buy end-->
             </div>
-            <!--header end--><br /><br />
-            
+            <!--header end--><br /><br />     
     </div>
     <!--  Bata Logo and Menu, Women, Men, Kids -->
-    <div class="ui borderless menu">
+    <div class="ui secondary borderless menu">
         <div class="item">
             <img class="ui small image" src="img/bata_logo.png">
         </div>
         <a class="item" onclick="women()"><h4 class="ui header">WOMEN</h4></a>
         <a class="item" onclick="men()"><h4 class="ui header">MEN</h4></a>
         <a class="item" onclick="kids()"><h4 class="ui header">KIDS</h4></a>
-
-
+<!-- clock div -->
+<div class="right menu">      
+        </div>
     </div>
-
 <!-- Slider Images -->
 <div id="owl-slide">
-          
-  <div class="item"><img src="img/banner-bata.jpg" alt="Owl Image"></div>
-  <div class="item"><img src="img/banner-weinbrenner.jpg" alt="Owl Image"></div>
-  <div class="item"><img src="img/banner-power.jpg" alt="Owl Image"></div>
-  <div class="item"><img src="img/banner-marie-claire.jpg" alt="Owl Image"></div>
-  <div class="item"><img src="img/banner-toughees.jpg" alt="Owl Image"></div>
-
+  <div class="item"><a href="http://bata.kilimall.co.ke/" class="item"><img src="img/banner-bata.jpg" alt="Owl Image"> </a></div>
+  <div class="item"><a href="http://bata.kilimall.co.ke/" class="item"><img src="img/banner-weinbrenner.jpg" alt="Owl Image"> </a></div>
+  <div class="item"><a href="http://bata.kilimall.co.ke/" class="item"><img src="img/banner-power.jpg" alt="Owl Image"> </a></div>
+  <div class="item"><a href="http://bata.kilimall.co.ke/" class="item"><img src="img/banner-marie-claire.jpg" alt="Owl Image"> </a></div>
+  <div class="item"><a href="http://bata.kilimall.co.ke/" class="item"><img src="img/banner-toughees.jpg" alt="Owl Image"> </a></div>
 </div>
-
 <!-- Brands Images-->
 <div class="ui segment" id="segment_container">
     <div class="row cw-grid-layout" >
         <div class="large-12 medium-12 small-12 layout-container cc-grid of1" row-number="9" data-columns>
-            <a href="http://www.kilimall.co.ke" class="item">
+            <a href="http://bata.kilimall.co.ke/" class="item">
                 <img src="img/brand_bata.jpg">
             </a>
-            <a href="http://www.kilimall.co.ke" class="item">
+            <a href="http://bata.kilimall.co.ke/" class="item">
                 <img src="img/brand_comfit.jpg">
             </a>
         </div>
         <div class="large-12 medium-12 small-12 layout-container cc-grid of1" row-number="9" data-columns>
-            <a href="http://www.kilimall.co.ke" class="item">
+            <a href="http://bata.kilimall.co.ke/" class="item">
                 <img src="img/brand_marie.jpg">
             </a>
-            <a href="http://www.kilimall.co.ke" class="item">
+            <a href="http://bata.kilimall.co.ke/" class="item">
                 <img src="img/brand_safari.jpg">
             </a>
-
-            <a href="http://www.kilimall.co.ke" class="item">
+            <a href="http://bata.kilimall.co.ke/" class="item">
                 <img src="img/brand_wein.jpg">
             </a>
-            <a href="http://www.kilimall.co.ke" class="item">
+            <a href="http://bata.kilimall.co.ke/" class="item">
                 <img src="img/brand_power.jpg">
             </a>
         </div>
         <div class="large-12 medium-12 small-12 layout-container cc-grid of1" row-number="9" data-columns>
-            <a href="http://www.kilimall.co.ke" class="item">
+            <a href="http://bata.kilimall.co.ke/" class="item">
                 <img src="img/brand_bubble.jpg">
             </a>
-            <a href="http://www.kilimall.co.ke" class="item">
+            <a href="http://bata.kilimall.co.ke/" class="item">
                 <img src="img/brand_tommy.jpg">
             </a>
-            <a href="http://www.kilimall.co.ke" class="item">
+            <a href="http://bata.kilimall.co.ke/" class="item">
                 <img src="img/brand_pata.jpg">
             </a>
         </div>
     </div>
 
-<img src="img/Bata-for-women.jpg" alt="" id="women_brand" style="width:100%" /> <!-- Women Brand -->
-<div class="ui two column grid">
-    <div class="column"><img src="img/Women-category.jpg" alt=""/></div>
-    <div class="column">
-        <div class="two column row">
-            <div class="ui two item borderless menu">
-              <a class="item"><img class="ui medium image" src="img/sketchers_shoe.png" alt=""/></a>
-              <a class="item"><img class="ui medium image" src="img/sketchers_shoe2.png" alt=""/></a>
-            </div>
-        </div>
-        <div class="two column row">
-            <div class="ui two item borderless menu">
-              <a class="item"><img class="ui medium image" src="img/sk3.png" alt=""/></a>
-              <a class="item"><img class="ui medium image" src="img/sk4.png" alt=""/></a>
-            </div>
-        </div>
-        <div class="two column row">
-          <div class="ui two item borderless menu">
-            <a class="item"><img class="ui medium image" src="img/sk5.png" alt=""/></a>
-            <a class="item"><img class="ui medium image" src="img/sk6.png" alt=""/></a>
-          </div>
-        </div>
-    </div>
-</div>
-<img src="img/Bata-for-men.jpg" alt="" id="men_brand" style="width:100%" /> <!--  Mens Brand -->
-<div class="ui two column grid">
-    <div class="column">
-      <div class="two column row">
-        <div class="ui two item borderless menu">
-          <a class="item"><img class="ui medium image" src="img/sketchers_shoe.png" alt=""/></a>
-          <a class="item"><img class="ui medium image" src="img/sketchers_shoe2.png" alt=""/></a>
-        </div>
-      </div>
-      <div class="two column row">
-        <div class="ui two item borderless menu">
-          <a class="item"><img class="ui medium image" src="img/sk3.png" alt=""/></a>
-          <a class="item"><img class="ui medium image" src="img/sk4.png" alt=""/></a>
-        </div>
-      </div>
-      <div class="two column row">
-        <div class="ui two item borderless menu">
-          <a class="item"><img class="ui medium image" src="img/sk5.png" alt=""/></a>
-          <a class="item"><img class="ui medium image" src="img/sk6.png" alt=""/></a>
-        </div>
-      </div>
-    </div>
-    <div class="column"><img style="margin-left:7.5%;" src="img/Men-category.jpg" alt=""/></div> 
-</div>
-<img src="img/Bata-for-kids.jpg" alt="" id="kids_brand" style="width:100%"/> <!-- Kids Brand -->
-<div class="ui two column grid">
-    <div class="column"><img src="img/Kids-category.jpg" alt=""/></div>
-    <div class="column">
-      <div class="two column row">
-        <div class="ui two item borderless menu">
-          <a class="item"><img class="ui medium image" src="img/sketchers_shoe.png" alt=""/></a>
-          <a class="item"><img class="ui medium image" src="img/sketchers_shoe2.png" alt=""/></a>
-        </div>
-      </div>
-      <div class="two column row">
-        <div class="ui two item borderless menu">
-          <a class="item"><img class="ui medium image" src="img/sk3.png" alt=""/></a>
-          <a class="item"><img class="ui medium image" src="img/sk4.png" alt=""/></a>
-        </div>
-      </div>
-      <div class="two column row">
-        <div class="ui two item borderless menu">
-          <a class="item"><img class="ui medium image" src="img/sk5.png" alt=""/></a>
-          <a class="item"><img class="ui medium image" src="img/sk6.png" alt=""/></a>
-        </div>
-      </div>
-    </div>
-</div>
-      <h2 class="ui centered header"> Clearance Women</h2>
+
+
+<a href="http://bata.kilimall.co.ke/"><img src="img/PC-banner-2.jpg" alt="" id="women_brand" style="width:100%" /></a> <!-- Banner Brand -->
+
       <div class="owl-carousel">
             <div>
                 <div class="card">
                     <div class="image">
-                      <a href="#"><img width="236" height="295" src="img/clearance_w.jpg"></a>
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <a href="#"><img width="236" height="295" src="img/clearance_w2.jpg"></a>
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
+                      <a href="http://www.kilimall.co.ke/item-12368-Stylish-Toe-Pointed-red-heels.html"><img width="236px" height="240px"  src="img/Clearance-1.jpg"></a>
                     </div>
                     
                 </div>
@@ -456,180 +361,305 @@
             <div>
               <div class="card">
                     <div class="image">
-                      <a href="#"><img width="236" height="295" src="img/clearance_w3.jpg"></a>
+                      <a href="http://www.kilimall.co.ke/item-12362-Pointed-toe-Classy-heels-Nude-3.html"><img width="236px" height="240px"  src="img/Clearance-2.jpg"></a>
                     </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>                 
+                    
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <a href="#"><img width="236" height="295" src="img/clearance_w4.jpg"></a>
+                      <a href="http://www.kilimall.co.ke/item-12355-Classy-heeled-Court-Shoes-Black-8.html"><img width="236px" height="240px"  src="img/Clearance-3.jpg"></a>
                     </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>                 
+                                 
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <a href="#"><img width="236" height="295" src="img/clearance_w5.jpg"></a>
+                      <a href="http://www.kilimall.co.ke/item-12337-Wedged-Ballerinas-by-Marie-Clarie-Black-8.html"><img width="236px" height="240px"  src="img/Clearance-4.jpg"></a>
                     </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>                
-                </div>
-            </div>
-          </div> <!-- End Women Sales -->
-          <h2 class="ui centered header"> Clearance Men</h2>
-          <div class="owl-carousel">
-            <div>
-                <div class="card">
-                    <div class="image">
-                      <a href="#"><img width="266" height="295" src="img/clearance_m1.jpg"></a>
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>                   
+                                    
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <a href="#"><img width="266" height="295" src="img/clearance_m2.jpg"></a>
+                      <a href="http://www.kilimall.co.ke/item-12434-Stylish-Ballerina-Flat-Shoes-Black-8.html"><img width="236px" height="240px"  src="img/Clearance-5.jpg"></a>
                     </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>
+                                    
                 </div>
             </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <a href="#"><img width="266" height="295" src="img/clearance_m3.jpg"></a>
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <a href="#"><img width="266" height="295" src="img/clearance_m4.jpg"></a>
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-              <div class="card">
-                    <div class="image">
-                      <a href="#"><img src="img/batam5.jpg"></a>
-                    </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>
-                </div>
-            </div>
-          </div> <!-- End Men Sales -->
+          </div> 
 
-          <h2 class="ui centered header"> Clearance Kids</h2>
+      <div class="owl-carousel">
+            <div>
+                <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12301-Stylish-Bata-Heels-Nude-8.html"><img width="236px" height="240px"  src="img/Clearance-6.jpg"></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12440-Stylish-Ballerina-Flat-Shoes-Brown-8.html"><img width="236px" height="240px"  src="img/Clearance-7.jpg"></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12331-Classy-Mini-heel-Shoes-Black-8.html"><img width="236px" height="240px"  src="img/Clearance-8.jpg"></a>
+                    </div>
+                              
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12361-Classy-heeled-Court-Shoes-Nude-8.html"><img width="236px" height="240px"  src="img/Clearance-9.jpg"></a>
+                    </div>
+                               
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12325-Stylish-mini-heel-by-Bata-Black-8.html"><img width="236px" height="240px"  src="img/Clearance-10.jpg"></a>
+                    </div>
+                              
+                </div>
+            </div>
+          </div> 
+
+
+
+          <!-- End Women Sales -->
+          <a href="http://bata.kilimall.co.ke/"><img src="img/PC-banner-3.jpg" alt="" id="women_brand" style="width:100%" /></a> <!-- Banner Brand -->
+
+
+<div class="owl-carousel">
+            <div>
+                <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12313-Brown-Napoleon--Mocassino-Loafers-Brown-11.html"><img width="256px" height="256px"  src="img/man1.jpg"></a>
+                    </div>
+                                    
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12344-Brown-Leather-Mocassino-Loafers-Brown-6.html"><img width="256px" height="256px"  src="img/man2.jpg"></a>
+                    </div>
+                   
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12381-High-top-quality-Weinbrenner-Outdoor-Shoes-Grey-6.html"><img width="256px" height="256px"  src="img/man3.jpg"></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12464-Fashionable-and-comfy-power-Sneakers-Multicolor-11.html"><img  width="256px" height="256px" src="img/man4.jpg"></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12375-High-top-quality-Weinbrenner-Outdoor-Shoes-Dark-Brown-6.html"><img width="256px" height="256px"  src="img/man5.jpg"></a>
+                    </div>
+                    
+                </div>
+            </div>
+          </div> 
+
+  <div class="owl-carousel">
+            <div>
+                <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12295-Premium-Bata-Formal-Leather-Shoes-Black-11.html"><img width="256px" height="256px"  src="img/man6.jpg"></a>
+                    </div>
+                                    
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12302-High-top-quality-Outdoor-Weinbrenner-Dark-Brown-6.html"><img width="256px" height="256px" src="img/man7.jpg"></a>
+                    </div>
+                   
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12386-High-top-quality-Weinbrenner-Outdoor-Shoes-Brown-6.html"><img width="256px" height="256px"  src="img/man8.jpg"></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12396-Wienbrenner-Classic-outdoor-boots-Dark-Brown-11.html"><img  width="256px" height="256px"  src="img/man9.jpg"></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12402-Authentic-Weinbrenner-outdoor--Shoes-black-11.html">
+                        <img width="256px" height="256px"  src="img/man10.jpg"></a>
+                    </div>
+                    
+                </div>
+            </div>
+          </div> 
+
+
+
+         
+          <!-- End Women Sales -->
+        <a href="http://bata.kilimall.co.ke/">  <img src="img/PC-banner1.jpg" alt="" id="women_brand" style="width:100%" /></a> <!-- Banner Brand -->
+
+
           <div class="owl-carousel">
             <div>
                 <div class="card">
                     <div class="image">
-                      <a href="#"><img src="img/batak1.jpg"></a>
+                      <a href="http://www.kilimall.co.ke/item-12414-Bubble-Gummers-Ballerina-Flipflops-Cream-6.html"><img width="236px" height="240px" src="img/kid-1.jpg"></a>
                     </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>
+                    
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <a href="#"><img src="img/batak2.jpg"></a>
+                      <a href="http://www.kilimall.co.ke/item-12420-Bubble-Gummers-Ballerina-Flipflops-Navy-Blue-6.html"><img width="236px" height="240px" src="img/kid-2.jpg"></a>
                     </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>
+                    
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <a href="#"><img src="img/batak3.jpg"></a>
+                      <a href="http://www.kilimall.co.ke/item-12670-High-Top-bubble-Gummers-canvas-Rubber-shoes-Black-3.html"><img width="236px" height="240px" src="img/kid-3.jpg"></a>
                     </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>
+                    
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <img src="img/batak4.jpg">
+
+                      <a href="http://www.kilimall.co.ke/item-12458-Bubble-gummers-comfy-kids-Sandals.html">
+                      <img width="236px" height="240px" src="img/kid-4.jpg">
                     </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>
+                    
                 </div>
             </div>
             <div>
               <div class="card">
                     <div class="image">
-                      <a href="#"><img src="img/batak5.jpg"></a>
+                      <a href="http://www.kilimall.co.ke/item-12676-High-Top-bubble-Gummers-canvas-Rubber-shoes-Brown-3.html">
+                        <img width="236px" height="240px" src="img/kid-5.jpg"></a>
                     </div>
-                    <div class="content">
-                      <div class="header">Leather Lace Shoe Black Up</div>
-                      <div class="meta">
-                        <a>Bata</a>
-                      </div>
-                    </div>
+                    
                 </div>
             </div>
+<div>
+              <div class="card">
+                    <div class="image">
+                      <a href="http://www.kilimall.co.ke/item-12783-High-Top-bubble-Gummers-canvas-Rubber-shoes-Navy-blue-9.html">
+                      <img width="236px" height="240px" src="img/kid-6.jpg">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div>
+              <div class="card">
+                    <div class="image">
+                       <a href="http://www.kilimall.co.ke/item-12452-Classic-Bubble-gummers-Sneakers-White-6.html">
+                      <img width="236px" height="240px" src="img/kid-7.jpg">
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
           </div> <!-- End Kids Sales -->
+
+
+
+<a href="http://bata.kilimall.co.ke/"><img src="img/Bata-for-women.jpg" alt="" id="women_brand" style="width:100%" /> </a><!-- Women Brand -->
+<a href="http://bata.kilimall.co.ke/"><img src="img/Bata_Click.jpg" alt="" id="women_brand" style="width:100%" /></a> <!-- click here -->
+<div class="ui two column grid">
+    <div class="column"><a href="http://bata.kilimall.co.ke/"><img src="img/Women-category.jpg" alt=""/></a></div>
+    <div class="column">
+        <div class="two column row">
+            <div class="ui two item borderless menu" style= "margin-left: -5px!important;">
+              <a  href="http://www.kilimall.co.ke/item-12817-Stylish-Toe-Pointed-red-heels-Red-3.html" class="item"><img class="ui medium image" src="img/Clearance-women-1.jpg" alt=""/></a><!-- comment -->
+              <a href="http://www.kilimall.co.ke/item-12362-Pointed-toe-Classy-heels-Nude-3.html" class="item"><img class="ui medium image" src="img/Clearance-women-2.jpg" alt=""/></a>
+            </div>
+        </div>
+
+        <div class="two column row">
+            <div class="ui two item borderless menu" style= "margin-left: -5px!important;">
+              <a href="http://www.kilimall.co.ke/item-12471-Comfy-Canvas-Rubber-Shoes-Black-3.html" class="item">
+                <img class="ui medium image" src="img/w3.jpg" alt=""/></a>
+              <a href="http://www.kilimall.co.ke/item-12477-Stylish-Rubber-canvas-shoes-Yellow-3.html" class="item"><img class="ui medium image" src="img/Final-1-(4).jpg" alt=""/></a>
+            </div>
+        </div>
+        <div class="two column row">
+          <div class="ui two item borderless menu" style= "margin-left: -5px!important;">
+            <a href="http://www.kilimall.co.ke/item-12736-Unisex-Canvas-rubber-Shoes-Purple-3.html" class="item">
+              <img class="ui medium image" src="img/w5.jpg" alt=""/></a>
+            <a href="http://www.kilimall.co.ke/item-12483-Comfy-Canvas-Ballerina-Shoes-White-3.html" class="item">
+              <img class="ui medium image" src="img/Final-6.jpg" alt=""/></a>
+          </div>
+        </div>
+    </div>
+</div>
+<a href="http://bata.kilimall.co.ke/" class="item"><img src="img/Bata-for-men.jpg" alt="" id="men_brand" style="width:100%" /></a> <!--  Mens Brand -->
+<img src="img/Bata_Click.jpg" alt="" id="women_brand" style="width:100%" /> <!-- click here -->
+<div class="ui two column grid">
+    <div class="column">
+      <div class="two column row">
+        <div class="ui two item borderless menu">
+          <a href="http://www.kilimall.co.ke/item-12580-Quality-leather-formal-shoes-Black-6.html" class="item"><img class="ui medium image" src="img/Chosen/men/men1.jpg" alt=""/></a>
+          <a href="http://www.kilimall.co.ke/item-12556-Premium-Leather-Formal-Shoes-Brown-6.html" class="item"><img class="ui medium image" src="img/Chosen/men/men2.jpg" alt=""/></a>
+        </div>
+      </div>
+      <div class="two column row">
+        <div class="ui two item borderless menu">
+           <a href="http://www.kilimall.co.ke/item-12574-Classic-Northstar-Leather-Shoes-Brown-6.html" class="item"><img class="ui medium image" src="img/Chosen/men/men3.jpg" alt=""/></a>
+         <a href="http://www.kilimall.co.ke/item-12550-Unisex-High-top-canvas-rubber-shoes-black-6.html" class="item"><img class="ui medium image" src="img/Chosen/men/men4.jpg" alt=""/></a>
+        </div>
+      </div>
+      <div class="two column row">
+        <div class="ui two item borderless menu">
+           <a href="http://www.kilimall.co.ke/item-12610-Quality-Power-Sneakers--Trainers-Grey-6.html" class="item"><img class="ui medium image" src="img/Chosen/men/men5.jpg" alt=""/></a>
+           <a href="http://www.kilimall.co.ke/item-12744-Premium-Power-Sneaker--Trainers-Red-3.html" class="item"><img class="ui medium image" src="img/Chosen/men/men6.jpg" alt=""/></a>
+        </div>
+      </div>
+    </div>
+    <div class="column"><a href="http://bata.kilimall.co.ke/" class="item"><img style="margin-left:7.5%;" src="img/Men-category.jpg" alt=""/></a></div> 
+</div>
+
 
   </div> <!-- end segment -->
   <div class="w">
@@ -716,7 +746,6 @@
                 <div>
                     <a href="http://www.kilimall.co.ke/article-52.html" title="Self Collection Point"> Self Collection Point </a>
                 </div>
-
             </dd>
         </dl>
         <span class="clr"></span>
@@ -741,8 +770,7 @@
         <span>Copyright 2015 Kilimall.co.ke, All rights reserved</span>
     </div>
 </div>
-<!-- footer end -->
-  
+<!-- footer end -->  
   <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="assets/bower_components/semantic/dist/semantic.min.js"></script>
   <script src="assets/extra/ResponsiveSlides/responsiveslides.min.js"></script>
@@ -750,7 +778,8 @@
   <script src="assets/extra/scrollto/lib/jquery-scrollto.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="assets/extra/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
-
+  <script src="assets/compiled/flipclock.js"></script>
+  <script src="assets/compiled/flipclock.min.js"></script>
   <script>
   /* Scroll To functions */
     function women(){
@@ -783,7 +812,7 @@
             items:4,
             navigation:true,
             navigationText: [
-            "<i class='chevron left icon'></i>",
+            "<i style= 'background-color: #ff00;' class='chevron left icon'></i>",
             "<i class='chevron right icon'></i>"
             ]
         });
@@ -793,6 +822,21 @@
         });
     });
   </script>
+  <script type="text/javascript">
 
+   /* Count down functions */
+        $(document).ready(function() {
+            var clock;
+
+            var date = new Date(2015, 10, 27);
+            var now = new Date();
+            var diff = (date.getTime()/1000) - (now.getTime()/1000);
+
+            clock = $('#clockdiv').FlipClock(diff,{
+                clockFace: 'DailyCounter',
+                countdown: true
+            });  
+        });
+    </script>
 </body>
 </html>
