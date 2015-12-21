@@ -3,8 +3,8 @@
 <head>
 	<title>Bata Shop - Purchase shoes &amp; accessories online | Kenya's No.1 Online Shopping for Electronics, Fashion, Home&amp; Living and more Enjoy Payment on Delivery and Free Shipping for Products</title>
 	  <link rel="stylesheet" type="text/css" href="assets/bower_components/semantic/dist/semantic.min.css">
-    <link rel="stylesheet" href="assets/extra/owl.carousel/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="assets/extra/owl.carousel/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="assets/extra/owl-carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="assets/extra/owl-carousel/assets/owl.theme.default.min.css">
     <link rel="icon" href="http://www.kilimall.co.ke/favicon.ico" mce_href="http://www.kilimall.co.ke/favicon.ico" type="image/x-icon">
     <!-- <link rel="stylesheet" href="assets/compiled/flipclock.css"> -->
     <meta content="text/html" charset="utf-8" http-equiv="content-type">
@@ -18,11 +18,6 @@
     		    border: 0px;
             
             }
-
-            .slick-slide
-            {
-                width: 200px;
-            }
             .card{
                 margin-left:5%;
             }
@@ -35,38 +30,6 @@
              border-radius: 0px;
              margin-left: 7.5%;
          }
-
-         .rslides {
-          position: relative;
-          list-style: none;
-          overflow: hidden;
-          width: 100%;
-          padding: 0;
-          margin: 0;
-          /*margin-left: 4%;*/
-      }
-      .rslides li {
-          -webkit-backface-visibility: hidden;
-          position: absolute;
-          display: none;
-          width: 100%;
-          left: 0;
-          top: 0;
-      }
-
-      .rslides li:first-child {
-          position: relative;
-          display: block;
-          float: left;
-      }
-
-      .rslides img {
-          display: block;
-          height: auto;
-          float: left;
-          width: 100%;
-          border: 0;
-      }
 
     #segment_container{
     	margin-left:8%;
@@ -174,15 +137,21 @@
   width: 100%;
   height: auto;
 }
-.owl-prev{
-  display: none;
-  }
-.owl-next{
-  display: none;
+.owl-theme .owl-controls .owl-nav [class*=owl-] {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D82525;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
-#clockdiv{
-  height: 10%;
-  margin-left: 45%;
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
 }
 img{
   height: auto;
@@ -388,6 +357,36 @@ img{
               </a>
             </div>
                        
+        </div>
+    </div>
+    <div>
+      <div class="card">
+            <div class="image">
+              <a href="http://www.kilimall.co.ke/item-12769-Stylish-Bata-Canvas-rubber-shoes-Blue-3.html">
+                <img width="236px" height="240px"  src="img/women-g5.jpg">
+              </a>
+            </div>
+                      
+        </div>
+    </div>
+    <div>
+      <div class="card">
+            <div class="image">
+              <a href="http://www.kilimall.co.ke/item-12769-Stylish-Bata-Canvas-rubber-shoes-Blue-3.html">
+                <img width="236px" height="240px"  src="img/women-g5.jpg">
+              </a>
+            </div>
+                      
+        </div>
+    </div>
+    <div>
+      <div class="card">
+            <div class="image">
+              <a href="http://www.kilimall.co.ke/item-12769-Stylish-Bata-Canvas-rubber-shoes-Blue-3.html">
+                <img width="236px" height="240px"  src="img/women-g5.jpg">
+              </a>
+            </div>
+                      
         </div>
     </div>
     <div>
@@ -738,9 +737,8 @@ img{
 <!-- footer end -->  
   <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="assets/bower_components/semantic/dist/semantic.min.js"></script>
-  <script src="assets/extra/ResponsiveSlides/responsiveslides.min.js"></script>
   <script src="assets/extra/salvattore/dist/salvattore.min.js"></script>
-  <script src="assets/extra/owl.carousel/owl-carousel/owl.carousel.min.js"></script>
+  <script src="assets/extra/owl-carousel/owl.carousel.min.js"></script>
 
   <!-- <script src="assets/compiled/flipclock.js"></script>
   <!-- <script src="assets/compiled/flipclock.min.js"></script> -->
@@ -749,24 +747,23 @@ img{
       $('.ui.dropdown').dropdown();
 
       $(document).ready(function() {
-          $(".rslides").responsiveSlides({
-            auto: true,
-            pager: true,
-            nav: true,
-            namespace: "transparent-btns"
-          });
           
           $(".owl-carousel").owlCarousel({
             items:4,
-            navigation:true,
-            navigationText: [
-            "<i style= 'background-color: #ff00;' class='chevron left icon'></i>",
-            "<i class='chevron right icon'></i>"
-            ]
+            slideBy:4,
+            nav:true,
+            navText: [
+                    'Prev',
+                    'Next'
+                ],
+            dots:true
         });
           $("#owl-slide").owlCarousel({
             items:1,
-            autoPlay: 4000
+            loop:true,
+            autoplay:true,
+            autoplayTimeout:4000,
+            autoplayHoverPause:true
         });
     });
   </script>
